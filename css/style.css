@@ -1,0 +1,106 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.container{
+    width: 1170px;
+    margin: 0 auto;
+}
+
+.text-center{
+    text-align: center;
+}
+
+.display-flex{
+    display: flex;
+}
+
+.justify-cntn-cntr{
+    justify-content: center;
+}
+
+.align-item-cntr{
+    align-items: center;
+}
+
+.flex-direction-col{
+    flex-direction: column;
+}
+
+.flex-wrap{
+    flex: wrap;
+}
+
+
+
+
+
+
+.heading{
+    background: #5f0c5f;
+    height: 100px;
+}
+
+.heading h1{
+   /* line-height: 50%; */
+    padding-top: 35px;
+}
+
+.allContent{
+    height: 500px;
+    background: #834983;
+    margin-top: 2px;
+}
+
+.allContent h2{
+    padding: 10px 0 10px 10px;
+}
+.allContent .calculator{
+    background: magenta;
+    border: 2px solid white;
+    width: 400px;
+    height: 300px;
+    margin-left: 20px;
+}
+
+.calculator .inputField{
+    width: 250px;
+    height: 150px;
+}
+
+.calculator .inputField input{
+    outline: none;
+    padding: 15px;
+    width: 200px;
+    margin: 15px 0 0 10px ;
+}
+
+.calculator .operation{
+    width: 200px;
+    height: 150px;
+}
+
+.calculator .operation button{
+    padding: 10px 15px;
+    margin-top: 10px;
+    margin-left: 10px;
+    width: 60px;
+}
+
+/* .calculator .operation .reminder{
+    width: 135px;
+} */
+
+.calculator .outputField{
+    border: 2px solid orange;
+}
+
+.calculator textarea{
+    width: 355px;
+    margin: 20px 10px;
+    height: 200px;
+    resize: none;
+    outline: none;
+    padding: 10px;
+}
