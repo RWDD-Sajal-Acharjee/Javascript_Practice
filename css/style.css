@@ -67,9 +67,11 @@
 .CalculatorContent .calculator{
     background: magenta;
     border: 2px solid white;
+    box-sizing: border-box;
     width: 400px;
     height: 300px;
     margin-left: 20px;
+    box-shadow: 3px 5px 5px black;
 }
 
 .calculator .inputField{
