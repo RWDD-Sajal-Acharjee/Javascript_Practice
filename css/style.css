@@ -32,6 +32,10 @@
     flex: wrap;
 }
 
+.justify-cntn-spaceBtwn{
+    justify-content: space-between;
+}
+
 
 
 
@@ -47,16 +51,20 @@
     padding-top: 35px;
 }
 
-.allContent{
+.CalculatorContent{
     height: 500px;
     background: #834983;
     margin-top: 2px;
 }
 
-.allContent h2{
+.CalculatorContent .calculatorPartOne{
+    margin-left: 60px;
+}
+
+.CalculatorContent h2{
     padding: 10px 0 10px 10px;
 }
-.allContent .calculator{
+.CalculatorContent .calculator{
     background: magenta;
     border: 2px solid white;
     width: 400px;
@@ -103,4 +111,10 @@
     resize: none;
     outline: none;
     padding: 10px;
+}
+
+
+
+.calculatorPartTwo{
+    margin-right: 100px;
 }

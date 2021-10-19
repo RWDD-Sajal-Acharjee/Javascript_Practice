@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,8 +8,9 @@
     <title>Javascript Practice</title>
     <link rel="stylesheet" href="css/style.css">
 </head>
+
 <body style="color: azure;">
-    
+
     <!-- Head section start -->
     <section id="head">
         <div class="container heading text-center">
@@ -19,29 +21,71 @@
 
     <!-- Main Content section start -->
     <section id="Content">
-        <div class="container allContent">
-            <h2>গরীবের ক্যালকুলেটর</h2>
-            <div class="calculator display-flex flex-direction-col">
-                <div class="part-One display-flex">
-                    <div class="inputField">
-                        <input type="text" id="number-1" placeholder="Enter your 1st value" required>
-                        <input type="text" id="number-2" placeholder="Enter your 2nd value" required> 
+        <div class="container CalculatorContent display-flex justify-cntn-spaceBtwn">
+            
+            <div class="calculatorPartOne">
+                <h2>গরীবের ক্যালকুলেটর</h2>
+                <div class="calculator display-flex flex-direction-col">
+                    <div class="part-One display-flex">
+                        <div class="inputField">
+                            <input type="text" id="number-1" placeholder="Enter your 1st value" required>
+                            <input type="text" id="number-2" placeholder="Enter your 2nd value" required>
+                        </div>
+                        <div class="operation">
+                            <button onclick="addition();">ADD</button>
+                            <button onclick="subtraction();">SUB</button>
+                            <button onclick="multiplication();">MULT</button>
+                            <button onclick="division();">DIV</button>
+                            <button class="reminder" onclick="reminder();">REM</button>
+                            <button onclick="clearScr();">C</button>
+                        </div>
                     </div>
-                    <div class="operation">
-                        <button onclick="addition();">ADD</button>
-                        <button onclick="subtraction();">SUB</button>
-                        <button onclick="multiplication();">MULT</button>
-                        <button onclick="division();">DIV</button>
-                        <button class="reminder" onclick="reminder();">REM</button>
-                        <button onclick="clearScr();">C</button>
-                    </div>
+                    <textarea id="output" readonly></textarea>
                 </div>
-                <textarea id="output"></textarea>
             </div>
+
+
+            <div class="calculatorPartTwo">
+                <h2>মধ্যবিত্তের ক্যালকুলেটর</h2>
+                <div class="calculator display-flex flex-direction-col">
+                    <div class="part-One display-flex">
+                        <div class="inputField">
+                            <input type="text" id="mainText" placeholder="Ex. 45+50,40-10,30*3,50/5,50%18" required>
+                            
+                        </div>
+                        <div class="operation">
+                            <button onclick="ADD();">+</button>
+                            <button onclick="SUB();">-</button>
+                            <button onclick="MULT();">*</button>
+                            <button onclick="DIV();">/</button>
+                            <button class="reminder" onclick="REM();">REM</button>
+                            <button onclick="clearOutput();">C</button>
+                        </div>
+                    </div>
+                    <textarea id="finalOutput" readonly></textarea>
+                </div>
+            </div>
+
+
+
+            <!-- <br><br>
+            <input type="text" id="mainText">
+            <button onclick="ADD();">ADD</button>
+            <h2 id="display_1"></h2>
+            <h2 id="display_2"></h2>
+            <h2 id="display_3"></h2> -->
         </div>
     </section>
     <!-- End of main Content section -->
-    
+
+
+
+
+
+
+
+
     <script src="js/main.js"></script>
 </body>
+
 </html>
